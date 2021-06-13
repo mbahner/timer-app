@@ -1,0 +1,21 @@
+#clock {
+    font-size: 20vw;
+    font-family: 'digital-clock-font';
+}
+
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('./digital-7.ttf');
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}

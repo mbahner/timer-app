@@ -1,0 +1,14 @@
+#scramble-text {
+    font-size: 20pt;
+    padding: 20px;
+}
+
+#cube-timer-entire-page {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#cube-timer-main {
+    width: 100%;
+}

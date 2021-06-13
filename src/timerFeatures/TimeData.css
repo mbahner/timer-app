@@ -1,0 +1,92 @@
+@import '../vars.css';
+
+#time-data-container {
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#timeListContainer {
+    width: 300px;
+    height: 40vh;
+    overflow:auto;
+    border: solid black;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+#meta-data {
+    border: solid black;
+    border-width: 1px;
+    padding: 10px;
+    height: 130px;
+    border-radius: 3px;
+}
+
+.timeSlot0, .timeSlot1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.timeSlot0 {
+    background-color: rgb(240, 240, 240);
+}
+
+.timeSlot0:hover, .timeSlot1:hover{
+    background-color: var(--color-time-hover);
+}
+
+.solveNum {
+    width: 20pt;
+    font-weight: 900;
+}
+
+.solveTime {
+    width: 80pt;
+}
+
+
+.plusTwo-false, .xButton, .dnf-false {
+    color: var(--color-font2);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.xButton:hover{
+    border-radius: 2px;
+    background-color: rgb(255, 95, 95);
+    color: black;
+}
+
+.plusTwo-false:hover {
+    border-radius: 2px;
+    background-color: rgb(153, 185, 255);
+    color: black;
+}
+
+.plusTwo-true {
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: rgb(153, 185, 255);
+    color: black;
+    border-radius: 2px;
+    box-shadow:0px 0px 2px 1px black;
+}
+
+.dnf-false:hover{
+    border-radius: 2px;
+    background-color: rgb(149, 204, 127);
+    color: black;
+}
+
+.dnf-true {
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: rgb(149, 204, 127);
+    color: black;
+    border-radius: 2px;
+    box-shadow:0px 0px 2px 1px black;
+}

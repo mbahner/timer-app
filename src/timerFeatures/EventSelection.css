@@ -1,0 +1,42 @@
+@import '../vars.css';
+
+#events {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+
+    /* sizing */
+    width: 7vw;
+    font-size: 2.5vh;
+    height: 100vh;
+}
+
+.event-link {
+    background-color: grey;
+    color:  var(--color-nav-link);
+    text-decoration: none;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-link:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+.active-event, .active-event:hover {
+    width: 100%;
+    border-top: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
+    border-width: 1px;
+}
+
+.event-logo {
+    width: 70%;
+    padding: 10px;
+}

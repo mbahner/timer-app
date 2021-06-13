@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Navbar from './Navbar';
+import Login from './validate/Login';
+import SignUp from './validate/SignUp.js';
+import CubeTimer from './timerFeatures/CubeTimer';
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    console.log("Host URL"+process.env.PUBLIC_URL);
+    return (
+
+      <Router basename={process.env.PUBLIC_URL}>
+        <div className="App">
+        
+          
+
+          <Switch>
+            <Redirect exact from="/" to="/timer"/>
+            <Redirect exact from="/timer" to="/timer/3x3"/>
+            <Route path='/timer' component={CubeTimer} />
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/signup' component={SignUp} />
+          </Switch>
+
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
